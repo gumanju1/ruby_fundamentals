@@ -1,0 +1,1 @@
+# list 10 things that could be represented with arrays
