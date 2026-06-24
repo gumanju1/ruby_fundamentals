@@ -1,7 +1,7 @@
 class Cat
   attr_accessor :name, :age
   @@count = 0
-  
+
   def initialize(name, age)
     @name = name
     @age = age
@@ -23,6 +23,7 @@ class Cat
   def eat
     puts "Meow! This stuff is yummy."
   end
+
   def say_introduction
     puts "Meow! My name is #{@name} and I'm #{@age}!"
   end
