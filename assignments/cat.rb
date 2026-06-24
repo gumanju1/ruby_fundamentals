@@ -21,13 +21,16 @@ class Cat
   def eat
     puts "Meow! This stuff is yummy."
   end
+
+  def say_introduction
+    puts "Meow! My name is #{@name} and I'm #{@age}!"
+  end
 end
 
-cat = Cat.new("Beth", 6)
- 
+cat = Cat.new("Tommy", 7)
 cat.walk_forward
 cat.run
 cat.jump
 cat.eat
 
-
+cat.say_introduction
