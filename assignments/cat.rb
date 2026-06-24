@@ -1,22 +1,33 @@
 class Cat
-  def initialize (name, age)
+  attr_accessor :name, :age
+
+  def initialize(name, age)
     @name = name
     @age = age
   end
 
-  def name=(name)
-    @name = name 
+  def walk_forward
+    puts "Meow! I'm walking forward!"
   end
 
-  def age=(age)
-    @age = age
+  def run
+    puts "Meow! I'm running!"
+  end
+
+  def jump
+    puts "Meow! I'm jumping!"
+  end
+
+  def eat
+    puts "Meow! This stuff is yummy."
   end
 end
 
-cat = Cat.new("Cathy", 4)
+cat = Cat.new("Beth", 6)
  
-puts "Before: " + cat.inspect
-cat.name = " Catherine"
-cat.age = 5
+cat.walk_forward
+cat.run
+cat.jump
+cat.eat
 
-puts "After: " + cat.inspect
+
