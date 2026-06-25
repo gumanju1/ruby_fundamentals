@@ -24,3 +24,15 @@ class Account
     puts "Current Balance: Rs.#{@balance}"
   end
 end
+
+account = Account.new("Sweta")
+
+puts "Account Holder: #{account.name}"
+
+account.show_balance
+account.deposit(5000)
+account.show_balance
+account.withdraw(2000)
+account.show_balance
+account.withdraw(4000)
+account.show_balance
